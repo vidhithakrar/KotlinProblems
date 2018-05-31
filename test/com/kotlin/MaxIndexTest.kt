@@ -39,6 +39,6 @@ class MaxIndexTest {
     }
 }
 
-fun test(expected: Int?, vararg data: Int) {
+private fun test(expected: Int?, vararg data: Int) {
     assertEquals(expected, indexOfMax(data), "\ndata = ${Arrays.toString(data)}")
 }

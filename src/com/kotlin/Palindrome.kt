@@ -9,17 +9,6 @@
 package com.kotlin
 
 fun isPalindrome(s: String): Boolean {
-    if(s.trim().isEmpty()) return true
-
-    val charArray = s.chars().toArray()
-    var i = 0
-    var j = charArray.size - 1
-    while (i < j) {
-        if (charArray[i] != charArray[j])
-            return false
-        i++
-        j--
-    }
-    return true
+    return s == s.reversed()
 }
 
